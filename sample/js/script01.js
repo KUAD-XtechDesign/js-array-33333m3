@@ -6,7 +6,28 @@ $(function(){
     console.log(students)
   })
 
- 
+1
+ $("#button01").on("click",function(){
+   $("#content").text("最初のメンバーは" + students[0] + " 学生全員で" + students.length + "人")
+ })
+
+ $("#button02").on("click",function(){
+   $("#content").text(students[2]);
+ })
+
+ $("#button03").on("click",function(){
+   $("#content").text(students[students.length-1]);
+ })
+
+ $("#button04").on("click",function(){
+
+  students.push("山下")
+  $("#content").text(students.length-1);
+ })
+
+ $("#button05").on("click",function(){
+   students = students.reverse()
+ })
 
 
 })
