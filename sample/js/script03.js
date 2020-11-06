@@ -18,9 +18,9 @@ $(function(){
 
 
   $("#button02").on("click",funvtion(){
-    let students_txt = "";
+    let students_txt = "",
 
-    for(let i=0; i<students.length; i++){
+    for(let i=0; i<students.length, i++){
       students_txt += students[i].name + ':' + students[i].sport + '/'
     }
 
